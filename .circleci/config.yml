@@ -6,13 +6,12 @@ jobs:
     steps:
       - checkout
       - run:
-        name: install dependencies
-        command: |
-          python3 -m venv venv
-          . venv/bin/activate
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
       - run:
-        name: run tests
-        command: |
-          . venv/bin/activate
-          pytest
-
+          name: run tests
+          command: |
+            . venv/bin/activate
+            pytest
