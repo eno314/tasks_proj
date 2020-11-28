@@ -18,8 +18,7 @@ jobs:
       - save_cache:
           paths:
             - ./vend
-          key:
-            - v1-dependencies-{{ .Branch }}-{{ checksum "setup.py" }}
+          key: v1-dependencies-{{ .Branch }}-{{ checksum "setup.py" }}
       - run:
           name: run tests
           command: |
